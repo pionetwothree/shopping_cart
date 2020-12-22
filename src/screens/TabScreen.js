@@ -1,20 +1,24 @@
 /* eslint-disable prettier/prettier */
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Title, Tab, Tabs } from 'native-base';
+import { Container, Header, Left, Body, Right, Title, Icon, Button, Tab, Tabs } from 'native-base';
 import Tab1 from './tabs/tab1';
 import Tab2 from './tabs/tab2';
 import Tab3 from './tabs/tab3';
-export default class HeaderTitleExample extends Component {
+export default class HeaderIconExample extends Component {
   render() {
     return (
       <Container>
         <Header style={{backgroundColor:'#003366'}} hasTabs>
-            <Left/>
-          <Body>
+            <Left style={{flex:1}}>
+              <Icon name='arrow-back' />
+            </Left>
+          <Body style={{flex:1}}> 
             <Title style={{color:'#FFFFFF'}}>React-Native</Title>
           </Body>
-            <Right />
-        </Header>
+            <Right style={{flex:1}}>
+              <Icon name='menu' />
+            </Right>
+          </Header>
         <Tabs>
           <Tab heading="Tab1">
             <Tab1 />

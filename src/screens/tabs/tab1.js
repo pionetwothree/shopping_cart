@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import App from '../../../App';
 //import App from '../../../App';
 
 class Tab1 extends Component {
