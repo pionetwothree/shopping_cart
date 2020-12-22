@@ -9,7 +9,7 @@ export default class TabsExample extends Component {
     return (
       <Container>
         <Header style={{backgroundColor:'#003366'}} hasTabs>
-        <Left/>
+          <Left/>
           <Body>
             <Title style={{color: '#FFFFFF'}}>React-Native</Title>
           </Body>
